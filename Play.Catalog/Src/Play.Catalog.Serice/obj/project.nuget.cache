@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "aq6GGn/QP5VRqJLT2895kk+h7IUuRDdl8xBV+x0TtcaT7c1QUKE7qWEBdrb+MHGIfMfHeVRKJiYOsYfrU6kYfw==",
+  "success": true,
+  "projectFilePath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj",
+  "expectedPackageFiles": [
+    "/Users/raghavagarwal/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/raghavagarwal/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/raghavagarwal/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/raghavagarwal/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/raghavagarwal/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/raghavagarwal/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
