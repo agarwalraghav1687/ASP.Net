@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/Play.Catalog.Serice.dll",
+            "program": "${workspaceFolder}/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Play.Catalog.Serice.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Play.Catalog/Src/Play.Catalog.Serice",
             "stopAtEntry": false,
