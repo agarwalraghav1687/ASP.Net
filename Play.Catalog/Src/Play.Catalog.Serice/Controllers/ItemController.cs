@@ -30,5 +30,13 @@ namespace Play.Catalog.Serice.Controllers
             var item = items.Where(item => item.Id == id).SingleOrDefault();
             return item;
         }
+
+        [HttpPost]
+        public ActionResult<ItemDto> Post(CreateItemDTO createItemDto)
+        {
+            var item = new ItemDto(Guid.NewGuid(), createItemDto.name, createItemDto.description, createItemDto.price, DateTimeOffset.UtcNow);
+            
+            items.Add(item);
+        }
     }
 }
