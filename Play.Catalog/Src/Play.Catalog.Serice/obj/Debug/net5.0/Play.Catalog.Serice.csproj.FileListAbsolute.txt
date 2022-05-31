@@ -26,3 +26,11 @@
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/ref/Play.Catalog.Serice.dll
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/Play.Catalog.Serice.pdb
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/Play.Catalog.Serice.genruntimeconfig.cache
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll

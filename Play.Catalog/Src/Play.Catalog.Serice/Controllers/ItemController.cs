@@ -25,9 +25,14 @@ namespace Play.Catalog.Serice.Controllers
         }
 
         [HttpGet("{id}")]
-        public ItemDto Get(Guid id)
+        public ActionResult<ItemDto> Get(Guid id)
         {
             var item = items.Where(item => item.Id == id).SingleOrDefault();
+
+            if (item == null)
+            {
+                return NotFound();
+            }
             return item;
         }
 
@@ -37,6 +42,46 @@ namespace Play.Catalog.Serice.Controllers
             var item = new ItemDto(Guid.NewGuid(), createItemDto.name, createItemDto.description, createItemDto.price, DateTimeOffset.UtcNow);
             
             items.Add(item);
+
+            return CreatedAtAction(nameof(Get), new {id = item.Id}, item);
         }
+
+        [HttpPut("{id}")]
+
+        public IActionResult Put(Guid id, UpdateItemDTO updateItemDto)
+        {
+            var existingitem = items.Where (item => item.Id == id).SingleOrDefault();
+
+            if(existingitem == null)
+            {
+                return NotFound();
+            }
+
+            var UpdatedItem = existingitem with {
+                Name = updateItemDto.name,
+                Description = updateItemDto.description,
+                Price = updateItemDto.price
+            };
+
+            var index = items.FindIndex(existingitem => existingitem.Id == id);
+            items[index] = UpdatedItem;
+            
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
+        {
+            var index = items.FindIndex(existingitem => existingitem.Id == id);
+
+            if(index < 0)
+            {
+                return NotFound();
+            }
+            items.RemoveAt(index);
+
+            return NoContent();
+        }
+
     }
 }
