@@ -4,7 +4,6 @@
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Play.Catalog.Serice.runtimeconfig.json
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Play.Catalog.Serice.runtimeconfig.dev.json
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Play.Catalog.Serice.dll
-/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/ref/Play.Catalog.Serice.dll
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Play.Catalog.Serice.pdb
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.OpenApi.dll
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
@@ -18,7 +17,6 @@
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/Play.Catalog.Serice.MvcApplicationPartsAssemblyInfo.cs
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/Play.Catalog.Serice.MvcApplicationPartsAssemblyInfo.cache
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/staticwebassets/Play.Catalog.Serice.StaticWebAssets.Manifest.cache
-/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/staticwebassets/Play.Catalog.Serice.StaticWebAssets.xml
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/scopedcss/bundle/Play.Catalog.Serice.styles.css
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/Play.Catalog.Serice.RazorTargetAssemblyInfo.cache
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/Play.Catalog.Serice.csproj.CopyComplete
@@ -34,3 +32,21 @@
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/Play.Catalog.Serice
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/DnsClient.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/MongoDB.Bson.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/MongoDB.Driver.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/MongoDB.Driver.Core.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/MongoDB.Libmongocrypt.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/SharpCompress.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/linux/native/libsnappy64.so
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/linux/native/libzstd.so
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/osx/native/libsnappy64.dylib
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/osx/native/libzstd.dylib
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/win/native/libzstd.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/win/native/snappy32.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/win/native/snappy64.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/linux/native/libmongocrypt.so
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/osx/native/libmongocrypt.dylib
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net5.0/runtimes/win/native/mongocrypt.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net5.0/refint/Play.Catalog.Serice.dll
