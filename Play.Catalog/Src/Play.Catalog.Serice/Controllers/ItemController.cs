@@ -14,7 +14,12 @@ namespace Play.Catalog.Serice.Controllers
     [Route("Items")]
     public class ItemConroller : ControllerBase
     {
-        private readonly ItemsRepo itemsrepo = new();
+        private readonly IRepo<Item> itemsrepo;
+
+        public ItemConroller(IRepo<Item> itemsRepo)
+        {
+            this.itemsrepo = itemsRepo;
+        }
 
         [HttpGet]
         public async Task<IEnumerable<ItemDto>> GetAsync()

@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using MongoDB.Driver;
+using Play.Catalog.Serice.Entities;
+
+namespace Play.Catalog.Serice.Repo
+{
+
+    public class MongoRepo<T> : IRepo<T> where T : IEntity
+    {
+        private readonly IMongoCollection<T> dbCollection;
+
+        private readonly FilterDefinitionBuilder<T> filterBuilder = Builders<T>.Filter;
+
+
+        public MongoRepo(IMongoDatabase database, string collectionName)
+        {
+            dbCollection = database.GetCollection<T>(collectionName);
+        }
+
+        public async Task<IReadOnlyCollection<T>> GetAllAsync()
+        {
+            return await dbCollection.Find(filterBuilder.Empty).ToListAsync();
+        }
+
+        public async Task<T> GetAsync(Guid id)
+        {
+            FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.Id, id);
+
+            return await dbCollection.Find(filter).FirstOrDefaultAsync();
+        }
+
+        public async Task CreateAsync(T entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException(nameof(entity));
+            }
+
+            await dbCollection.InsertOneAsync(entity);
+        }
+
+        public async Task UpdateAync(T entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException(nameof(entity));
+            }
+
+            FilterDefinition<T> filter = filterBuilder.Eq(existingEntiy => existingEntiy.Id, entity.Id);
+            await dbCollection.ReplaceOneAsync(filter, entity);
+        }
+
+        public async Task DeleteAsync(Guid id)
+        {
+            FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.Id, id);
+            await dbCollection.DeleteOneAsync(filter);
+        }
+    }
+}
