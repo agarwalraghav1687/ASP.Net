@@ -32,5 +32,6 @@ namespace Play.Common.MongoDB
 
             return services;
         }
+
     }
 }
