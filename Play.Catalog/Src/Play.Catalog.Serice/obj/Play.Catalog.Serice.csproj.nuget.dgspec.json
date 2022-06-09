@@ -20,6 +20,7 @@
           "net6.0"
         ],
         "sources": {
+          "/Users/raghavagarwal/ASP.Net/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,9 +47,9 @@
               "target": "Package",
               "version": "[5.0.1, )"
             },
-            "MongoDB.Driver": {
+            "Play.Common": {
               "target": "Package",
-              "version": "[2.15.1, )"
+              "version": "[1.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

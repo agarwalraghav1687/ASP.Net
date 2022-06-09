@@ -49,3 +49,5 @@
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net6.0/Play.Catalog.Serice.pdb
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net6.0/Play.Catalog.Serice.genruntimeconfig.cache
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net6.0/ref/Play.Catalog.Serice.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/Play.Common.dll

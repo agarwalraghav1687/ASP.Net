@@ -2,6 +2,6 @@ namespace Play.Common.Settings
 {
     public class ServiceSettings
     {
-        public string ServiceName { get; init; } = default!;
+        public string ServiceName { get; init; }
     }
 }

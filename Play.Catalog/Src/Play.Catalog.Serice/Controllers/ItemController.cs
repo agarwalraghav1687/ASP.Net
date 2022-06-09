@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Play.Catalog.Serice.dtos;
 using Play.Catalog.Serice.Entities;
-using Play.Catalog.Serice.Repo;
+using Play.Common;
 
 namespace Play.Catalog.Serice.Controllers
 {

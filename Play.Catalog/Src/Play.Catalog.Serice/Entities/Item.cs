@@ -1,4 +1,5 @@
 using System;
+using Play.Common;
 
 namespace Play.Catalog.Serice.Entities
 {

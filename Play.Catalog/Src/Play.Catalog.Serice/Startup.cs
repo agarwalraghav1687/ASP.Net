@@ -13,8 +13,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
 using Play.Catalog.Serice.Entities;
-using Play.Catalog.Serice.Repo;
-using Play.Catalog.Serice.Settings;
+using Play.Common.MongoDB;
+using Play.Common.Settings;
 
 namespace Play.Catalog.Serice
 {
