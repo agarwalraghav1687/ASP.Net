@@ -16,17 +16,38 @@ namespace Play.Catalog.Serice.Controllers
     {
         private readonly IRepo<Item> itemsrepo;
 
+        private static int requestCounter = 0;
+
         public ItemConroller(IRepo<Item> itemsRepo)
         {
             this.itemsrepo = itemsRepo;
         }
 
         [HttpGet]
-        public async Task<IEnumerable<ItemDto>> GetAsync()
+        public async Task<ActionResult<IEnumerable<ItemDto>>> GetAsync()
         {
+
+            requestCounter++;
+            Console.WriteLine($"Request {requestCounter} starting...");
+
+            if (requestCounter <= 2)
+            {
+                Console.WriteLine($"Request {requestCounter} delaying...");
+                await Task.Delay(TimeSpan.FromSeconds(10));
+            }
+
+            if (requestCounter <= 4)
+            {
+                Console.WriteLine($"Request {requestCounter} 500 (internal Server Error)...");
+                return StatusCode(500);
+            }
+
+
             var items = (await itemsrepo.GetAllAsync())
                         .Select(item => item.AsDto());
-            return items;
+            Console.WriteLine($"Request {requestCounter}: 200(OK)");
+
+            return Ok(items);
         }
 
         [HttpGet("{id}")]
