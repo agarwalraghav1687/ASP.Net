@@ -14,9 +14,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
 using Play.Catalog.Serice.Entities;
-using Play.Catalog.Serice.Settings;
 using Play.Common.MongoDB;
 using Play.Common.Settings;
+using Play.Common.MassTransit;
 
 namespace Play.Catalog.Serice
 {
@@ -35,17 +35,10 @@ namespace Play.Catalog.Serice
         {
             serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
 
-            services.AddMongo().AddMongoRepo<Item>("item");
+            services.AddMongo()
+                    .AddMongoRepo<Item>("item")
+                    .AddMassTransitWithRabbitMq();
 
-            services.AddMassTransit(x =>
-            {
-                x.UsingRabbitMq((context, configurator) =>
-                {
-                    var rabbitMQSettings = Configuration.GetSection(nameof(RabbitMQSettings)).Get<RabbitMQSettings>();
-                    configurator.Host(rabbitMQSettings.Host);
-                    configurator.ConfigureEndpoints(context, new KebabCaseEndpointNameFormatter(serviceSettings.ServiceName, false));
-                });
-            });
             services.AddControllers(options =>
             {
                 options.SuppressAsyncSuffixInActionNames = false;

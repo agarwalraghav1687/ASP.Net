@@ -51,3 +51,12 @@
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/Debug/net6.0/ref/Play.Catalog.Serice.dll
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
 /Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/Play.Common.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/MassTransit.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/MassTransit.Abstractions.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/MassTransit.AspNetCoreIntegration.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/MassTransit.RabbitMqTransport.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/RabbitMQ.Client.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/System.Text.Json.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/Play.Catalog.Contracts.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/bin/Debug/net6.0/Play.Catalog.Contracts.pdb

@@ -1,0 +1,12 @@
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/bin/Debug/net6.0/Play.Catalog.Contracts.deps.json
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/bin/Debug/net6.0/Play.Catalog.Contracts.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/bin/Debug/net6.0/Play.Catalog.Contracts.pdb
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/Play.Catalog.Contracts.csproj.AssemblyReference.cache
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/Play.Catalog.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/Play.Catalog.Contracts.AssemblyInfoInputs.cache
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/Play.Catalog.Contracts.AssemblyInfo.cs
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/Play.Catalog.Contracts.csproj.CoreCompileInputs.cache
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/Play.Catalog.Contracts.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/refint/Play.Catalog.Contracts.dll
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/Play.Catalog.Contracts.pdb
+/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/Debug/net6.0/ref/Play.Catalog.Contracts.dll
