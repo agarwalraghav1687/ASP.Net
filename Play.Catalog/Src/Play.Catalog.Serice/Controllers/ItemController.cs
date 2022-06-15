@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
+using Play.Catalog.Contracs;
 using Play.Catalog.Serice.dtos;
 using Play.Catalog.Serice.Entities;
 using Play.Common;
@@ -16,36 +18,18 @@ namespace Play.Catalog.Serice.Controllers
     {
         private readonly IRepo<Item> itemsrepo;
 
-        private static int requestCounter = 0;
-
-        public ItemConroller(IRepo<Item> itemsRepo)
+        private readonly IPublishEndpoint publishEndPoint;
+        public ItemConroller(IRepo<Item> itemsRepo, IPublishEndpoint publishEndPoint)
         {
             this.itemsrepo = itemsRepo;
+            this.publishEndPoint = publishEndPoint;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ItemDto>>> GetAsync()
         {
-
-            requestCounter++;
-            Console.WriteLine($"Request {requestCounter} starting...");
-
-            if (requestCounter <= 2)
-            {
-                Console.WriteLine($"Request {requestCounter} delaying...");
-                await Task.Delay(TimeSpan.FromSeconds(10));
-            }
-
-            if (requestCounter <= 4)
-            {
-                Console.WriteLine($"Request {requestCounter} 500 (internal Server Error)...");
-                return StatusCode(500);
-            }
-
-
             var items = (await itemsrepo.GetAllAsync())
                         .Select(item => item.AsDto());
-            Console.WriteLine($"Request {requestCounter}: 200(OK)");
 
             return Ok(items);
         }
@@ -75,6 +59,8 @@ namespace Play.Catalog.Serice.Controllers
 
             await itemsrepo.CreateAsync(item);
 
+            await publishEndPoint.Publish(new CatalogItemCreated(item.Id, item.Name, item.Description));
+
             return CreatedAtAction(nameof(GetByIdAsync), new { id = item.Id }, item);
         }
 
@@ -95,6 +81,9 @@ namespace Play.Catalog.Serice.Controllers
 
             await itemsrepo.UpdateAync(existingitem);
 
+            await publishEndPoint.Publish(new CatalogItemUpdated(existingitem.Id, existingitem.Name, existingitem.Description));
+
+
             return NoContent();
         }
 
@@ -108,7 +97,11 @@ namespace Play.Catalog.Serice.Controllers
                 return NotFound();
             }
 
+            await publishEndPoint.Publish(new CatalogItemDeleted(id));
+
             await itemsrepo.DeleteAsync(item.Id);
+
+
 
             return NoContent();
         }

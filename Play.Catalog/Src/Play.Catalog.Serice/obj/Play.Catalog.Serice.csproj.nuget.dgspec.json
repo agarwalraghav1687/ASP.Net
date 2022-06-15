@@ -4,14 +4,14 @@
     "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj": {}
   },
   "projects": {
-    "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj": {
+    "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj",
-        "projectName": "Play.Catalog.Serice",
-        "projectPath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj",
+        "projectUniqueName": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj",
+        "projectName": "Play.Catalog.Contracts",
+        "projectPath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj",
         "packagesPath": "/Users/raghavagarwal/.nuget/packages/",
-        "outputPath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/",
+        "outputPath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/raghavagarwal/.nuget/NuGet/NuGet.Config"
@@ -38,7 +38,72 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj",
+        "projectName": "Play.Catalog.Serice",
+        "projectPath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/Play.Catalog.Serice.csproj",
+        "packagesPath": "/Users/raghavagarwal/.nuget/packages/",
+        "outputPath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Serice/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/raghavagarwal/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/Users/raghavagarwal/ASP.Net/packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj": {
+                "projectPath": "/Users/raghavagarwal/ASP.Net/Play.Catalog/Src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "MassTransit.Aspnetcore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.1, )"
